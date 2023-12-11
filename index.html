@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <button id="return_home">Back</button>
+        <form id="form_input">
+            <div id="form_header">
+                <h1>Test  your knowledge</h1>
+            </div>
+            <div class="form__input-wrapper">
+                <label for="topic">Select your topic:</label>
+                <select id="topic">
+                    <option selected disabled>Select</option>
+                    <option value="cs" >Computer Science</option>
+                    <option value="animal">Animals</option>
+                    <option value="his" >History</option>
+                </select>
+            </div>
+            <div class="form__input-wrapper">
+                <label for="amount">Select number of questions:</label>
+                <input type="number" name="number of questions" id="amount" min="1" max="20" value="1">
+            </div>
+            <div id="form_footer">
+                <span id="error_message"></span>
+                <button id="btn_start" type="submit">Start</button>
+            </div>
+        </form>
+        <div id="app_container">
+            <div id="progress_bar_container">
+                <div id="progress_bar"></div>
+            </div>
+            <div id="quiz_content">
+                <div id="quiz_header">
+                    <h3 id="count_down">Timer: <span id="timer"></span></h3>
+                </div>
+                <div id="quiz_body">
+                    <h3 id="quiz__question"></h3>
+                    <ul id="quiz__answers_container">
+                    
+                    </ul>
+                </div>
+                
+                <div id="btn_next_container">
+                    <button id="btn_next">Next</button>
+                </div>
+            </div>
+            <div id="score_container">
+                <h3 id="score_title">Game Over</h3>
+                <h3 id="score"></h3>
+                <button id="reset_btn">Play again</button>
+            </div>
+        </div>
+        
+    </main>
+</body>
+</html>
+
+<script src="index.js"></script>
