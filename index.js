@@ -64,8 +64,8 @@ function getSubject(e) {
     return;
   }
 
-  if (inputAmount.value < 1) {
-    errorMessage.innerHTML = "Number of questions must be more than 0";
+  if (inputAmount.value < 1 || inputAmount.value > 20) {
+    errorMessage.innerHTML = "Questions must be more than 0 or less than 20";
     inputAmount.focus();
     return;
   }
